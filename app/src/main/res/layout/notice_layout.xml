@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="5px"
+    app:cardElevation="5px"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:id="@+id/noticeProfileImage"
+                android:src="@drawable/avatar"
+                app:civ_border_color="@color/pink"
+                app:civ_border_width="2px"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                ></de.hdodenhof.circleimageview.CircleImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="8dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/noticeProfileName"
+                    android:text="Amjad Ali"
+                    android:textColor="@color/textColor"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3:40 PM"
+                    android:id="@+id/noticeDate"
+                    ></TextView>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/viewline"
+            android:layout_marginTop="8px"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Here you Can See the text that is posted "
+            android:textAlignment="textStart"
+            android:id="@+id/noticeTitle"
+            android:textSize="18sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/viewline"
+            android:layout_marginTop="8px"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/noticeImage"
+            android:src="@drawable/avatar"
+            android:layout_marginTop="5px"
+            android:layout_gravity="center"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:text="Update Notice"
+            android:id="@+id/noticeUpdateBtn"
+            android:backgroundTint="@color/green1"
+
+            />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

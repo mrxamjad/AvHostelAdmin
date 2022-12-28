@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "360537571277",
+    "project_id": "av-hostel",
+    "storage_bucket": "av-hostel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360537571277:android:5d4593eb2641a0ed344e84",
+        "android_client_info": {
+          "package_name": "com.example.mrxhostel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360537571277-p7tt6jhdpcmgiu3tvq9n341r02imtacu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB33j6rO9JNLcFj9hffrF44sKUTGXWX1Zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360537571277-p7tt6jhdpcmgiu3tvq9n341r02imtacu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
