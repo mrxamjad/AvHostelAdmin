@@ -42,7 +42,20 @@ public class LoginActivity extends AppCompatActivity {
                username= user.getText().toString();
                 password=pass.getText().toString();
 
-                validateUser(username,password);
+                if(username.isEmpty())
+                {
+                    user.setError("Enter Username");
+                    user.requestFocus();
+                }else if (password.isEmpty())
+                {
+                    pass.setError("Password is Empty");
+                    pass.requestFocus();
+
+                }else{
+                            validateUser(username,password);
+            }
+
+
             }
         });
 
@@ -72,8 +85,10 @@ public class LoginActivity extends AppCompatActivity {
                          finishAffinity();
                      }
                      else {
-                         Toast.makeText(LoginActivity.this, "Wrong Password user: "+user1+ "pass: "+pass1, Toast.LENGTH_SHORT).show();
+                         Toast.makeText(LoginActivity.this, "Invalid Username or Password", Toast.LENGTH_SHORT).show();
+                         //Toast.makeText(LoginActivity.this, "Wrong Password user: "+user1+ "pass: "+pass1, Toast.LENGTH_SHORT).show();
                      }
+                     
 
 
 
